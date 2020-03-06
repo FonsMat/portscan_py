@@ -1,8 +1,10 @@
-import socket
+import socket 
+#network socket is an end point of a communication flow between processes through a computer network.
 
 domain = str(input('Enter a domain:  '))
 
-ports = [21, 23, 80, 443, 8080]
+#the program will only check these ports:
+ports = [21, 23, 80, 443, 8080] #you can change if you want
 
 for port in ports:
     try:
